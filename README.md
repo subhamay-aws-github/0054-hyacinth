@@ -25,7 +25,15 @@ Multipart upload allows you to upload a single object as a set of parts. Each pa
 
 ### Executing program
 
-* Change directory where you have cloned the repository and execute the bash script from your local system using the following command
+* Change directory where you have cloned the repository and give execute permission to the script
+```
+cd <script directory>
+```
+* Provide execute permission to the bash script s3_multipart_upload.sh
+```
+chmod 755 s3_multipart_upload.sh
+```
+* Execute the bash script from your local system using the following command
 ```
 sh ./s3_multipart_upload.sh <Filename to be uploaded> <Split size in MB> <Target Bucket Name>
 
