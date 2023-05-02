@@ -1,3 +1,4 @@
 *.mp4
 *.txt
 s3_upload.sh
+*.dmg
