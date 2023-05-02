@@ -44,6 +44,7 @@ then
         touch list.txt
         for split_file in `ls x*`
         do
+            ((i=i+1))
             call_s3upload_api ${i}, ${split_file}, ${UPLOAD_ID} &
         done
 
