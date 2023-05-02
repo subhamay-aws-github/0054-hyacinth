@@ -44,12 +44,7 @@ then
         touch list.txt
         for split_file in `ls x*`
         do
-            ((i=i+1))
             call_s3upload_api ${i}, ${split_file}, ${UPLOAD_ID} &
-            if [[ $((i%4)) -eq 0 ]]
-            then
-                sleep 90
-            fi
         done
 
         wait 
