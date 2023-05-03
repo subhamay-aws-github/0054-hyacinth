@@ -2,3 +2,5 @@
 *.txt
 s3_upload.sh
 *.dmg
+.DS_Store
+.terraform

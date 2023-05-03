@@ -1,0 +1,5 @@
+project_name   = "hyacinth"
+environment    = "devl"
+aws_region     = "us-east-1"
+s3_bucket_name = "hyacinth-bucket"
+kms_key        = "alias/SB-KMS"
